@@ -1,0 +1,9 @@
+\documentclass[a4paper]{article}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{geometry}
+\usepackage{amsfonts}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
