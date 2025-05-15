@@ -10,12 +10,18 @@ set shiftwidth=4
 set expandtab
 set autoindent
 set fileformat=unix
-set colorcolumn=79
 set background=dark
+set clipboard=unnamedplus
+
+syntax on
 
 filetype indent on
 
 inoremap jk <esc>
+nnoremap < gT
+nnoremap > gt
+nnoremap ± :tabnew ./<CR>
+nnoremap <silent> hl :nohlsearch<CR>
 
 call plug#begin('~/.vim/plugged')
 
@@ -26,6 +32,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sainnhe/everforest'
 Plug 'wuelnerdotexe/vim-enfocado'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
@@ -38,4 +45,4 @@ let g:airline#extensions#hunks#enabled = 0
 let g:airline#extensions#branch#enabled = 1
 let g:airline_section_b = '%{strftime("%H:%M")}'
 
-colorscheme OceanicNext
+colorscheme gruvbox
